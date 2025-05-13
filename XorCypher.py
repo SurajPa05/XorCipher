@@ -11,9 +11,8 @@ def encrypter(text,key):
     print(Encrypted)   
 
 #decryption algorithm
-def decrypter(Encrypted_text,key):
-    bytetext = Encrypted_text.decode().hex()
-    print(bytetext)
+def decrypter():
+    print("decryptes the text")
 
 #generates random key
 def Generate_Key(text,key_len):
@@ -26,6 +25,10 @@ def Generate_Key(text,key_len):
 
 def Main():
     text = ""
+    print("|====================================================|")
+    print("|        | PYTHON XOR ENCRYPTER / DECRYPTER |        |")
+    print("|====================================================|")
+    print("|                                                    |")
     text = input("Enter the text you want to encrypt\n")
     comp = int(input("Choose the encryption method :"))
     if comp == 1:
