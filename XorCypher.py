@@ -1,6 +1,7 @@
-import random
 import secrets
 import string 
+import pyfiglet 
+
 
 #encryption algorithm
 def encrypter(text,key):
@@ -24,15 +25,15 @@ def Generate_Key(text,key_len):
 
 
 def Main():
-    text = ""
-    print("|====================================================|")
-    print("|        | PYTHON XOR ENCRYPTER / DECRYPTER |        |")
-    print("|====================================================|")
-    print("|                                                    |")
-    text = input("Enter the text you want to encrypt\n")
-    comp = int(input("Choose the encryption method :"))
+
+    logo = pyfiglet.figlet_format("XOR CYPHER", font = "slant"   ) 
+    print(logo) 
+    text = input("Enter the text you want to encrypt \n")
+    comp = int(input("\nChoose an encryption type \n\t 1.easy \n\t 2.medium \n\t 3.hard \nChoose An option from above : "))
+    
     if comp == 1:
         Generate_Key(text,8)
+        print("option 1")
     elif comp == 2:
         Generate_Key(text,16)
     elif comp == 3:
