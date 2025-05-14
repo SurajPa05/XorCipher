@@ -79,7 +79,7 @@ def Main():
         if comp_choice in key_lengths:
                 encrypted_hex, key = encrypter(text, key_lengths[comp_choice])
                 if encrypted_hex and key:
-                    print(f"Encrypted Text (Hex): {encrypted_hex}")
+                    print(f"\nEncrypted Text (Hex):\n{encrypted_hex}")
                     print(f"Encryption Key: {key}")
                 else:
                     print("Invalid choice, please select a valid option between 1 and 3.")
@@ -96,7 +96,7 @@ def Main():
             print(f"\nDecrypted Text: {decrypted_text}")
     else:
         print("Invalid choice, please select a valid option.")
-    print("\n\n")
+    print("")
 
 
 if __name__ == "__main__":
