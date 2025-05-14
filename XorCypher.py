@@ -75,6 +75,7 @@ def Main():
         except ValueError:  # Handle invalid input for encryption type
             print("Invalid input, please enter a number.")
             return
+        
         if comp_choice in key_lengths:
                 encrypted_hex, key = encrypter(text, key_lengths[comp_choice])
                 if encrypted_hex and key:
@@ -98,6 +99,11 @@ def Main():
     print("\n\n")
 
 
-# Main loop to keep the program running
-while(True):
-    Main()
+if __name__ == "__main__":
+    while True:
+        Main()
+        cont = input("Do you want to continue? (y/n): ").strip().lower()
+        if cont != 'y':
+            print("Exiting the program.")
+            break
+# End of the code
