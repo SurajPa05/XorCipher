@@ -1,1 +1,2 @@
-git rm --temp.py
+git rm --cached temp.py
+git rm --cached XorEnv
