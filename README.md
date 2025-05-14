@@ -2,7 +2,8 @@
 
 ![XOR Cipher Logo](https://img.shields.io/badge/Encryption-XOR-blueviolet) ![Status](https://img.shields.io/badge/Status-Completed-brightgreen) ![Python](https://img.shields.io/badge/Python-3.8+-blue)
 
-![XOR Cipher Banner](asset/banner.png)
+<img src="asset/banner.png" alt="XOR Cipher Banner" width="100%" />
+
 A simple yet educational command-line tool for encrypting and decrypting messages using the **XOR Cipher**, developed in Python. This project is intended for **learning and demonstration purposes**, showcasing basic principles of symmetric key encryption and secure key generation.
 
 ---
